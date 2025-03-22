@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "setuptools-scm[toml]>=8.0",
+    "wheel >= 0.38",
+]
+build-backend = "setuptools.build_meta"
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]

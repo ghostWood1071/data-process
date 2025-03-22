@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "task1",
+    "job_name": "etl_ingestion_1",
+    "extracts": [
+      {
+        "type": "INCREMENTAL",
+        "params": {"HEADER": "true"},
+        "schema": "",
+        "source": {
+          "object": "ABC_Airline_D.csv",
+          "schema": "data",
+          "database": "",
+          "zone": "data-zone",
+          "type": "S3",
+          "sub_type": "CSV",
+          "script": ""
+        },
+        "connection": {
+          "name": "",
+          "url": "",
+          "host": "",
+          "port": "",
+          "database": "",
+          "username": "",
+          "password": "",
+          "driver": ""
+        },
+        "criteria": {
+          "col": "",
+          "format": "",
+          "value": "",
+          "dtype": ""
+        },
+        "limit": 100000,
+        "batch": 2
+      }
+    ],
+    "udf_infos": [],
+    "transform": "",
+    "load": {
+      "type": "OVERWRITE",
+      "params": {},
+      "schema": "",
+      "target": {
+        "object": "airlines",
+        "schema": "dev",
+        "database": "target",
+        "zone": "s3a://data-zone",
+        "type": "S3",
+        "sub_type": "csv"
+      },
+      "connection": {
+        "name": "",
+        "url": "",
+        "host": "",
+        "port": "",
+        "database": "",
+        "username": "",
+        "password": "",
+        "driver": ""
+      }
+    },
+    "status": true
+  }
+]

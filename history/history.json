@@ -1,0 +1,17 @@
+[
+    {
+        "job_name": "etl_ingestion_1",
+        "status": "FAILED"
+    },
+    {
+        "job_name": "etl_ingestion_1",
+        "status": "FAILED",
+        "message": "incomplete format"
+    },
+    {
+        "job_name": "etl_ingestion_1",
+        "source_object": "ABC_Airline_D.csv",
+        "status": "SUCCESS",
+        "criteria_value": null
+    }
+]
